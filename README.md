@@ -2,7 +2,7 @@
 
 Project to learning, testing and trying new things.
 
-Website: https://purple-mushroom-0cb21c903.4.azurestaticapps.net
+Website: https://lively-mud-06f3bca03.4.azurestaticapps.net/country
 
 Everything on azure its from free plans, so sometimes you need to go to the website and then wait some time to start sql server.
 

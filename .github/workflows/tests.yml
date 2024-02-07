@@ -1,0 +1,40 @@
+name: Run all tests
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ${{matrix.os}}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v1.9.0
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        working-directory: ./src/API
+        run: dotnet restore
+
+      - name: Build
+        working-directory: ./src/API
+        run: dotnet build --no-restore
+
+      - name: Application.UnitTests
+        working-directory: ./tests/Application.UnitTests
+        run: dotnet test
+
+      - name: Application.IntegrationTests
+        working-directory: ./tests/Application.IntegrationTests
+        run: dotnet test

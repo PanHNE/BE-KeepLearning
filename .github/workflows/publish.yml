@@ -1,0 +1,40 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+env:
+  AZURE_WEBAPP_NAME: be-keeplearning
+  AZURE_WEBAPP_PACKAGE_PATH: "./publish"
+  AZURE_PUBLISH_PROFILE: "${{ secrets.AZURE_PUBLISH_PROFILE }}"
+
+jobs:
+  build:
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore
+        run: dotnet restore ./KeepLearning.sln
+
+      - name: Build
+        run: dotnet build ./KeepLearning.sln --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish ./KeepLearning.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+
+      - name: Deployment
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ env.AZURE_PUBLISH_PROFILE }}
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}

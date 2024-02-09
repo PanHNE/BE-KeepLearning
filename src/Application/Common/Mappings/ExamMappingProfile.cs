@@ -8,7 +8,7 @@ public class ExamMappingProfile : Profile
 {
     public ExamMappingProfile()
     {
-        CreateMap<SaveExamCountryCommand, Domain.Enteties.Exam>()
+        CreateMap<SaveExamCountryCommand, Domain.Entities.Exam>()
             .ForMember(dest =>
                 dest.ExtraInformations,
                 opt => opt.MapFrom(src => CreateJsonForExamCountryExtraInformations(src.Category, src.Continents)));

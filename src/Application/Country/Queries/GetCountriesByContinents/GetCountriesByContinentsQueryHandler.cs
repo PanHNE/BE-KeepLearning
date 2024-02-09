@@ -29,7 +29,7 @@ public class GetCountriesByContinentsQueryHandler : IRequestHandler<GetCountries
         return await result;
     }
 
-    private IQueryable<CountryDto> GetQueryableCountries(List<Domain.Enteties.Continent> continents)
+    private IQueryable<CountryDto> GetQueryableCountries(List<Domain.Entities.Continent> continents)
     {
 
         if (continents.Count() == 0)

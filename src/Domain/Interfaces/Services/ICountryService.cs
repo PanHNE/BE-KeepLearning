@@ -1,4 +1,4 @@
-using Domain.Enteties;
+using Domain.Entities;
 using Domain.Models.Enums;
 
 public interface ICountryService

@@ -1,6 +1,6 @@
 ﻿using Application.Common.Models.Continent;
 using Application.Common.Models.Country;
-using Domain.Enteties;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data.Seeders;

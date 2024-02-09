@@ -1,7 +1,7 @@
 ﻿using Application.Common.Models.Continent;
 using Application.Common.Models.Country;
 using Application.UnitTests.Helper;
-using Domain.Enteties;
+using Domain.Entities;
 
 namespace Infrastructure.Helper.Seeders.UnitTests;
 

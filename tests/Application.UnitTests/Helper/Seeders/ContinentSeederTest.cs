@@ -1,5 +1,5 @@
 ﻿using Application.UnitTests.Helper;
-using Domain.Enteties;
+using Domain.Entities;
 
 namespace Infrastructure.Helper.Seeders.UnitTests;
 

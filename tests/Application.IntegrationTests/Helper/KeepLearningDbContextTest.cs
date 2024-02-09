@@ -1,9 +1,9 @@
 ﻿using Application.Common.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using EntityContinent = Domain.Enteties.Continent;
-using EntityCountry = Domain.Enteties.Country;
-using EntityExam = Domain.Enteties.Exam;
-using EntityQuestion = Domain.Enteties.Question;
+using EntityContinent = Domain.Entities.Continent;
+using EntityCountry = Domain.Entities.Country;
+using EntityExam = Domain.Entities.Exam;
+using EntityQuestion = Domain.Entities.Question;
 
 namespace Application.UnitTests.Helper;
 

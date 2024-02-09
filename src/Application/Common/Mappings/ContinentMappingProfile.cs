@@ -6,6 +6,6 @@ public class ContinentMappingProfile : Profile
 {
     public ContinentMappingProfile()
     {
-        CreateMap<Domain.Enteties.Continent, ContinentDto>();
+        CreateMap<Domain.Entities.Continent, ContinentDto>();
     }
 }

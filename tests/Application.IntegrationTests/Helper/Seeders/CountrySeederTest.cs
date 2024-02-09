@@ -1,8 +1,8 @@
 ﻿using Application.Common.Interfaces;
 using Application.Common.Models.Continent;
 using Application.Common.Models.Country;
-using EContinent = Domain.Enteties.Continent;
-using ECountry = Domain.Enteties.Country;
+using EContinent = Domain.Entities.Continent;
+using ECountry = Domain.Entities.Country;
 
 namespace Application.Helper.Seeders.IntegrationTests
 {

@@ -1,4 +1,4 @@
-namespace Domain.Enteties;
+namespace Domain.Entities;
 
 public class Exam : BaseAuditableEntity
 {

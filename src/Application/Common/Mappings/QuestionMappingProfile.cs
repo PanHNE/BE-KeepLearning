@@ -6,6 +6,6 @@ public class QuestionMappingProfile : Profile
 {
     public QuestionMappingProfile()
     {
-        CreateMap<QuestionDto, Domain.Enteties.Question>();
+        CreateMap<QuestionDto, Domain.Entities.Question>();
     }
 }

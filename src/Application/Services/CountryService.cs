@@ -1,4 +1,4 @@
-﻿using Domain.Enteties;
+﻿using Domain.Entities;
 using Domain.Interfaces;
 using Domain.Models.Enums;
 using static Domain.Models.Enums.GuessType;
@@ -41,7 +41,7 @@ public class CountryService : ICountryService
         return randomCountries;
     }
 
-    public async Task<IEnumerable<Domain.Enteties.Country>> GetgCountriesByQuestionsAndCategory(List<string> questionText, GuessType.Category category)
+    public async Task<IEnumerable<Domain.Entities.Country>> GetgCountriesByQuestionsAndCategory(List<string> questionText, GuessType.Category category)
     {
         if (category == GuessType.Category.CapitalCity)
         {

@@ -1,5 +1,5 @@
 ﻿using Application.Common.Interfaces;
-using EContinent = Domain.Enteties.Continent;
+using EContinent = Domain.Entities.Continent;
 
 namespace Application.Helper.Seeders.IntegrationTests
 {

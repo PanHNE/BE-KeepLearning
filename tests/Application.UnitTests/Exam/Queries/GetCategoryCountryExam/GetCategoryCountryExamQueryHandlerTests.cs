@@ -1,5 +1,4 @@
 using Application.Exam.Queries.GetCategoryCountryExam;
-using static Domain.Models.Enums.GuessType;
 
 namespace Application.Country.Queries.GetCategoryCountryExam.UnitTest;
 

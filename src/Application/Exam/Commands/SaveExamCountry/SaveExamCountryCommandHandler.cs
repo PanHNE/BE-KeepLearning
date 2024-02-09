@@ -54,7 +54,7 @@ public class SaveExamCountryCommandHandler : IRequestHandler<SaveExamCountryComm
             throw new InvalidDataException("Countries from wrong continents");
         }
 
-        var entity = _mapper.Map<Domain.Enteties.Exam>(request);
+        var entity = _mapper.Map<Domain.Entities.Exam>(request);
 
         entity.AddDomainEvent(new SaveExamCountryEvent(entity));
 
@@ -63,7 +63,7 @@ public class SaveExamCountryCommandHandler : IRequestHandler<SaveExamCountryComm
         return entity.Id;
     }
 
-    private bool IsCantriesAreFromContientns(IEnumerable<Domain.Enteties.Country> countries, IEnumerable<Domain.Enteties.Continent> continents)
+    private bool IsCantriesAreFromContientns(IEnumerable<Domain.Entities.Country> countries, IEnumerable<Domain.Entities.Continent> continents)
     {
         return countries.Select(c => c.ContinentId).Distinct().Count() == continents.Count();
     }

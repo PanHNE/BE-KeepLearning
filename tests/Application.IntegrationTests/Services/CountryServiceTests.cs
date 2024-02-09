@@ -1,11 +1,6 @@
-using Application.Common.Mappings;
-using Application.Helper.Seeders.IntegrationTests;
-using Application.UnitTests.Helper;
-using AutoMapper;
-using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using static Domain.Models.Enums.GuessType;
-using EntityCountry = Domain.Enteties.Country;
+using EntityCountry = Domain.Entities.Country;
 
 namespace Application.Services.UnitTests;
 

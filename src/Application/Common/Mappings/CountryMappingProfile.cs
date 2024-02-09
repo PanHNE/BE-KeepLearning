@@ -6,7 +6,7 @@ public class CountryMappingProfile : Profile
 {
     public CountryMappingProfile()
     {
-        CreateMap<Domain.Enteties.Country, CountryDto>()
+        CreateMap<Domain.Entities.Country, CountryDto>()
             .ForMember( countryDto => countryDto.ContinentDto, opt => opt.MapFrom(src => src.Continent));
     }
 }

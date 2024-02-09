@@ -2,10 +2,10 @@
 
 public interface IKeepLearningDbContext
 {
-    DbSet<Domain.Enteties.Continent> Continents { get; }
-    DbSet<Domain.Enteties.Country> Countries { get; }
-    DbSet<Domain.Enteties.Question> Questions { get; }
-    DbSet<Domain.Enteties.Exam> Exams { get; }
+    DbSet<Domain.Entities.Continent> Continents { get; }
+    DbSet<Domain.Entities.Country> Countries { get; }
+    DbSet<Domain.Entities.Question> Questions { get; }
+    DbSet<Domain.Entities.Exam> Exams { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

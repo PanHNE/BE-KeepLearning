@@ -4,7 +4,7 @@ using Application.Country.Queries.GetNumberOfCountries;
 namespace API.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class ContinentController : ControllerBase
 {
 

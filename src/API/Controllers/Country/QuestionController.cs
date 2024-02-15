@@ -4,7 +4,7 @@ using Application.Question.Queries.GenerateQuestion;
 namespace API.Controllers;
 
 [ApiController]
-[Route("api/country/[controller]")]
+[Route("country/[controller]")]
 public class QuestionController : ControllerBase
 {
 

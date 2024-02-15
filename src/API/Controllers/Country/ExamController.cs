@@ -6,7 +6,7 @@ using Application.Exam.Queries.GetCategoryCountryExam;
 namespace API.Controllers;
 
 [ApiController]
-[Route("api/country/[controller]")]
+[Route("country/[controller]")]
 public class ExamController : ControllerBase
 {
 

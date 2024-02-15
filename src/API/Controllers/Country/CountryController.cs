@@ -6,7 +6,7 @@ using Application.Country.Queries.GetAllCountriesByContinents;
 namespace API.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class CountryController : ControllerBase
 {
 
